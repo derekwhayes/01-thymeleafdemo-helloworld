@@ -23,11 +23,11 @@ public class StudentController {
     }
 
     @PostMapping("/processStudentForm")
-    public String processForm(@ModelAttribute("student" Student theStudent) {
+    public String processForm(@ModelAttribute("student") Student theStudent) {
 
         // log the input data
         System.out.println("theStudent: " + theStudent.getFirstName() + " " + theStudent.getLastName());
 
-        return "student-confirmation"
+        return "student-confirmation";
     }
 }
